@@ -1,0 +1,139 @@
+4. 
+git init
+- Inicijaliziranje na git repo
+
+5. 
+git remote add origin https://github.com/stefanpetrovski1/SI_2023_lab1_206023.git
+- Povrzuvanje na lokalnoto repo so remote repo
+
+6. 
+git add README.md
+git commit -m "Initial commit"
+
+- Datotekata README.md bese imase Untracked status, pa so git add ja dodavame na scena.
+- Otkako datotekata e Tracked, mozeme da napravime commit.
+
+7. 
+git add SILab1.java
+git commit -m "Initial commit"
+
+- Datotekata SILab1.java bese imase Untracked status, pa so git add ja dodavame na scena.
+- Otkako datotekata e na scena, mozeme da napravime commit.
+
+8. 
+git push origin master
+
+- Ja sinhonizirame edinstvenata granka vo ovoj moment - master so Remote repo
+
+9. 
+git branch bug1
+git branch bug2
+git branch bug3
+
+- Kreirame 3 granki so ista sodrzina kako i master grankata
+
+10.
+git checkout bug1
+
+- Sega se naogjame na grankata bug1
+
+11.
+git add SILab1.java
+git commit -m "Fix wrong loop for reading"
+
+- Ja popravame greskata
+- Ja dodavame datotekata na scena
+- Pravime commit so poraka "Fix wrong loop for reading"
+
+12.
+git checkout bug2
+
+- Se naogjame na grankata bug2
+
+13.
+git add SILab1.java
+git commit -m " Fix wrong condition in filterOddNumbers"
+
+- Ja popravame greskata
+- Ja dodavame datotekata na scena
+- Pravime commit so poraka " Fix wrong condition in filterOddNumbers"
+
+14.
+git checkout bug3
+
+- Se naogjame na grankata bug3
+
+15.  
+git add SILab1.java
+git commit -m "Fix method sumEvenNumbers"
+
+- Ja popravame greskata
+- Ja dodavame datotekata na scena
+- Pravime commit so poraka "Fix method sumEvenNumbers"
+
+16. 
+git push origin bug1
+git push origin bug2
+git push origin bug3
+
+17.
+git checkout master
+
+18.
+git merge bug1
+
+- Spojuvanje na grankata bug1 kon master so strategija Fast-forward, nema konflikt
+
+19.
+git push origin master
+git push origin bug1
+git push origin bug2
+git push origin bug3
+
+20.
+git merge bug2
+
+- Spojuvanje na grankata bug1 kon master so strategija ort - recursive, nema konflikt
+
+21.
+git push origin master
+git push origin bug1
+git push origin bug2
+git push origin bug3
+
+22.
+git checkout bug3
+
+23.
+git rebase master
+
+- Pravime rebase kon grankata master
+
+24.
+git checkout master
+
+25. 
+git merge bug3
+
+- Spojuvanje na bug3 kon grankata master so strategija Fast-forward, nema konflikt
+
+26.
+git push origin master
+git push origin bug1
+git push origin bug2
+git push --force origin bug3
+
+
+27.
+git log
+git add logs.txt 206023.txt
+
+- Gi dodavame na scena dvete datoteki na scena koi bea Untracked i pravime commit so poraka "Final commit"
+
+28.
+git push origin master
+git push origin bug1
+git push origin bug2
+git push  origin bug3
+
+- Sinhronizacija na grankite
